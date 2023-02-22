@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import Summary from "./components/Summary";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-blue-200/50 w-screen h-screen flex items-center justify-center">
+      <div className="w-1/2 h-3/4 flex items-center justify-center">
+        <div className="md:max-w-lg h-3/4 w-full text-center">
+          <Summary />
+        </div>
+      </div>
     </div>
   );
 }
